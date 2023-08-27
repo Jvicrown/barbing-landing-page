@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbing Landing page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <section class="showcase active">
+     <header>
+        <h2 class="logo">Xtreme <span>KUTZ</span></h2>
+        <div class="toggle active"></div>
+     </header>
+    <video src="images/barber.mp4" width="1" muted loop autoplay></video>
+
+<div class="overlay"></div>
+
+     <div class="text">
+        <h2>Chill and Barb</h2>
+        <h3>Vintage style with modern cuts</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, in nisi quidem numquam perferendis aliquam doloremque, ullam accusantium saepe praesentium eos voluptatem? Ducimus facilis perspiciatis praesentium deserunt libero, sunt nihil.</p>
+        <a href="#">Book your service</a>
+     </div>
+
+
+  <ul class="social">
+      <li><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
+      <li><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
+      <li><a href="#"><img src="images/instagram.png" alt="instagram"></a></li>
+  </ul>
+   </section>
+   
+   <div class="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Destintion</a></li>
+        <li><a href="#">Blog</a></li>
+        
+    </ul>
+   </div>
+   <script>
+    const menuToggle = document.querySelector('.toggle')
+    const showcase = document.querySelector('.showcase')
+
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+    })
+   </script>
+</body>
+
+</html>
